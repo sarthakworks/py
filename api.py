@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # https://cloud.mongodb.com/ sarthak420@gmail
 # open http://localhost:5001/comments to see data from sample_mflix.comments.
-
+## in .env add relace password with actuall password from https://cloud.mongodb.com/v2/693be87fe6f5dd4307982816#/setup/access
 # MongoDB Connection from.env for security, it should be pushed to github
 uri = os.getenv('MONGO_URI')
 if not uri:
@@ -19,7 +19,7 @@ if not uri:
 # Create a new client and connect to the server MongoDB Stable API version 1
 client = MongoClient(uri, server_api=ServerApi('1'))
 
-# Select database and collection 
+# Select database and collection  sample_mflix.comments
 db = client['sample_mflix']
 collection = db['comments']
 
