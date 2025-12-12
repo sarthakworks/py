@@ -18,4 +18,4 @@ engine.runAndWait()
 
 print(f"{TextColors.WARNING}{pyjokes.get_joke()}{TextColors.ENDC}")
 
-print(f"{TextColors.OKGREEN}{os.listdir('/Users/sarthak/Documents/adobe/personal repo/')}{TextColors.ENDC}")
+print(f"{TextColors.OKGREEN}{os.listdir('.')}{TextColors.ENDC}")
