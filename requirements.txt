@@ -1,10 +1,12 @@
 blinker==1.9.0
 click==8.3.1
+dnspython==2.8.0
 Flask==3.1.2
 itsdangerous==2.2.0
 Jinja2==3.1.6
 MarkupSafe==3.0.3
 pyjokes==0.8.3
+pymongo==4.15.5
 pyobjc==12.1
 pyobjc-core==12.1
 pyobjc-framework-Accessibility==12.1
@@ -167,5 +169,6 @@ pyobjc-framework-VideoToolbox==12.1
 pyobjc-framework-Virtualization==12.1
 pyobjc-framework-Vision==12.1
 pyobjc-framework-WebKit==12.1
+python-dotenv==1.2.1
 pyttsx3==2.99
 Werkzeug==3.1.4
