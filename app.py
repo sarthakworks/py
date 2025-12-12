@@ -16,6 +16,9 @@ uri = os.getenv('MONGO_URI')
 if not uri:
     raise ValueError("No MONGO_URI found in environment variables")
 
+if not uri.startswith("mongodb://") and not uri.startswith("mongodb+srv://"):
+    raise ValueError(f"Invalid MONGO_URI: must start with 'mongodb://' or 'mongodb+srv://'. Got: {uri[:10]}...")
+
 # Create a new client and connect to the server MongoDB Stable API version 1
 client = MongoClient(uri, server_api=ServerApi('1'))
 
