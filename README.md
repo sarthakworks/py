@@ -1,5 +1,7 @@
 # Python MongoDB API Project
 
+It automatically start deployment in render on each push https://sarthak-nohj.onrender.com/comments
+
 This is a Flask-based Python application that connects to a MongoDB Atlas database. It retrieves data from the `sample_mflix` database (specifically the `comments` collection) and serves it via an API.
 
 ## 1. How to Run Locally
